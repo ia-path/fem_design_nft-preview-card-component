@@ -43,7 +43,6 @@ section.image-container {
 img.main-image {
 	position: absolute;
 	border-radius: 8px;
-	margin-bottom: 24px;
 	cursor: pointer;
 	width: 100%;
 	z-index: 1;
