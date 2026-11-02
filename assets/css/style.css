@@ -1,127 +1,147 @@
 :root {
-    --Blue500: #8bacda;
-    --Cyan400: #00fff7;
-    --Blue950: #0d192b;
-    --Blue900: #14253d;
-    --Blue800: #2f415b;
-    --White: #ffffff;
+	--Blue500: #8bacda;
+	--Cyan400: #00fff7;
+	--Blue950: #0d192b;
+	--Blue900: #14253d;
+	--Blue800: #2f415b;
+	--White: #ffffff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-color: var(--Blue950);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100dvh;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
+	background-color: var(--Blue950);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100dvh;
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
 }
 
 div.wrapper {
-    background-color: var(--Blue900);
-    width: 100%;
-    max-width: 350px;
-    height: 596px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
+	background-color: var(--Blue900);
+	width: 100%;
+	max-width: 350px;
+	height: 596px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	padding: 24px;
 }
 
 section.image-container {
-    position: relative;
+	position: relative;
 }
 
 img.main-image {
-    border-radius: 8px;
-    margin-bottom: 24px;
-    cursor: pointer;
-    width: 100%;
+	border-radius: 8px;
+	margin-bottom: 24px;
+	cursor: pointer;
+	width: 100%;
 }
 
+div.background-image {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    height: 100%;
+    width: 100;
+    background-color: #00fff781;
+}
+
+img.background-img {
+    position: absolute;
+    width: 50px;
+    display: block;
+    margin: auto;
+    top: 40%;
+}
+
+
+
+
 h1 {
-    font-size: 1.375rem;
-    color: var(--White);
-    margin-bottom: 16px;
-    font-weight: 600;
+	font-size: 1.375rem;
+	color: var(--White);
+	margin-bottom: 16px;
+	font-weight: 600;
 }
 
 h1:hover {
-    color: var(--Cyan400);
-    transition: 0.3s;
+	color: var(--Cyan400);
+	transition: 0.3s;
 }
 
 p.main-description {
-    font-size: 1.125rem;
-    color: var(--Blue500);
-    margin-bottom: 24px;
-    font-weight: 300;
+	font-size: 1.125rem;
+	color: var(--Blue500);
+	margin-bottom: 24px;
+	font-weight: 300;
 }
 
 section.ethereum {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
 }
 
 section.eth-price,
 section.time-left {
-    display: flex;
-    gap: 8px;
+	display: flex;
+	gap: 8px;
 }
 
 img.eth-price__img {
-    width: 12px;
+	width: 12px;
 }
 
 img.time-left__img {
-    width: 18px;
+	width: 18px;
 }
 
 span.eth-price__price {
-    color: #00fff7;
-    font-weight: 600;
+	color: #00fff7;
+	font-weight: 600;
 }
 
 span.time-left__days {
-    color: var(--Blue500);
+	color: var(--Blue500);
 }
 
 hr {
-    border: none;
-    height: 1px;
-    background-color: var(--Blue800);
-    margin-bottom: 24px;
+	border: none;
+	height: 1px;
+	background-color: var(--Blue800);
+	margin-bottom: 24px;
 }
 
 section.author {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
 }
 
 img.author__img {
-    width: 33px;
-    border-radius: 50%;
-    border: 1px solid var(--White);
+	width: 33px;
+	border-radius: 50%;
+	border: 1px solid var(--White);
 }
 
 p.author-description {
-    color: var(--Blue500);
+	color: var(--Blue500);
 }
 
 span.author-name {
-    color: var(--White);
+	color: var(--White);
 }
 
 span.author-name:hover {
-    color: var(--Cyan400);
-    transition: 0.3s;
+	color: var(--Cyan400);
+	transition: 0.3s;
 }

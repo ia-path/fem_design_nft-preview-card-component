@@ -1,44 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>NFT Preview Card Component</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <title>NFT Preview Card Component</title>
-</head>
+	<body>
+		<div class="wrapper">
+			<section class="image-container">
+				<img
+					src="assets/images/image-equilibrium.jpg"
+					alt=""
+					class="main-image"
+				/>
+					<div class="background-image">
+            <img
+              src="assets/images/icon-view.svg"
+              alt=""
+              class="background-img"
+            />
+          </div>
+			</section>
 
-<body>
-
-  <div class="wrapper">
-    <section class="image-container">
-      <img src="assets/images/image-equilibrium.jpg" alt="" class="main-image">
-      <div class="background"><img src="assets/images/icon-view.svg" alt="" class="background"></div>
-    </container>
-    <h1>Equilibrium #3429</h1>
-    <p class="main-description">Our Equilibrium collection promotes balance and calm.</p>
-    <section class="ethereum">
-      <section class="eth-price">
-        <img src="assets/images/icon-ethereum.svg" alt="" class="eth-price__img">
-        <span class="eth-price__price">0.041 ETH</span>
-      </section>
-      <section class="time-left">
-        <img src="assets/images/icon-clock.svg" alt="" class="time-left__img">
-        <span class="time-left__days">3 days left</span>
-      </section>
-    </section>
-    <hr>
-    <section class="author">
-      <img src="assets/images/image-avatar.png" alt="" class="author__img">
-      <p class="author-description">Creation of <span class="author-name">Jules Wyvern</span></p>
-    </section>
-  </div>
-
-
-</body>
-
+			<h1>Equilibrium #3429</h1>
+			<p class="main-description">
+				Our Equilibrium collection promotes balance and calm.
+			</p>
+			<section class="ethereum">
+				<section class="eth-price">
+					<img
+						src="assets/images/icon-ethereum.svg"
+						alt=""
+						class="eth-price__img"
+					/>
+					<span class="eth-price__price">0.041 ETH</span>
+				</section>
+				<section class="time-left">
+					<img
+						src="assets/images/icon-clock.svg"
+						alt=""
+						class="time-left__img"
+					/>
+					<span class="time-left__days">3 days left</span>
+				</section>
+			</section>
+			<hr />
+			<section class="author">
+				<img src="assets/images/image-avatar.png" alt="" class="author__img" />
+				<p class="author-description">
+					Creation of <span class="author-name">Jules Wyvern</span>
+				</p>
+			</section>
+		</div>
+	</body>
 </html>
