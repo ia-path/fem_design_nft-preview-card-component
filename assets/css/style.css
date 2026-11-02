@@ -37,36 +37,42 @@ div.wrapper {
 
 section.image-container {
 	position: relative;
+	height: 302px;
 }
 
 img.main-image {
+	position: absolute;
 	border-radius: 8px;
 	margin-bottom: 24px;
 	cursor: pointer;
 	width: 100%;
+	z-index: 1;
+}
+
+img.main-image:hover {
+	opacity: 0.5;
+	transition: 0.3s;
 }
 
 div.background-image {
     position: absolute;
     left: 0;
-    top: 0%;
+    top: 0;
     height: 100%;
-    width: 100;
-    background-color: #00fff781;
+    width: 100%;
+    background-color: var(--Cyan400);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
 }
 
 img.background-img {
-    position: absolute;
     width: 50px;
-    display: block;
-    margin: auto;
-    top: 40%;
 }
 
-
-
-
 h1 {
+	margin-top: 24px;
 	font-size: 1.375rem;
 	color: var(--White);
 	margin-bottom: 16px;
